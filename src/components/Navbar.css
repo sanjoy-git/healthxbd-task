@@ -3,4 +3,109 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  height: 60px;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.logo img{
+  border-radius: .5rem;
+}
+
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  flex-basis: 700px;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.nav *{
+  text-decoration: none;
+  border-radius: .5rem;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 3px;
+  font-weight: bold;
+}
+
+.nav *:hover{
+  /* background-color: teal; */
+  color: teal;
+  /* border-radius: .5rem; */
+}
+
+.nav-menu{
+  display: none;
+}
+
+.nav-menu nav{
+  display: none;
+}
+
+.navbar-nav>a{
+  text-decoration: none;
+  color: white;
+  background-color: teal;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: .5rem;
+  margin-left: 15px;
+  width: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+  .nav{
+    display: none;
+  }
+  .nav-menu{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 30px;
+  }
+  .nav-menu nav{
+    display: none;
+  }
+
+  .nav-menu nav *{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 1px;
+    font-weight: bold;
+    color: black;
+  }
+
+  .nav-menu:hover nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 5;
+    background-color: white;
+    padding: 15px;
+    border-radius: .5rem;
+    height: auto;
+    width: 100px;
+    text-align: center;
+    left: -70px;
+  }
+
+  .nav-menu nav *:hover{
+    background-color: teal;
+    color: white;
+    border-radius: .5rem;
+  }
+
 }
