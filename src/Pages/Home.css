@@ -2,4 +2,100 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background-color: #F3FFFF;
+  align-items: center;
+  color: #333;
+}
+
+.text{
+  flex-basis: 500px;
+  text-align: justify;
+}
+
+.text-child{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.text-single{
+  display: flex;
+  flex-basis: 200px;
+  flex-grow: 1;
+}
+
+.text-single p{
+  margin-top: 2px;
+}
+
+.text-single span{
+  font-size: large;
+  color: teal;
+  margin-right: 3px;
+}
+
+.book-now{
+  margin-top: 50px;
+  background-color: teal;
+  padding: 15px 35px;
+  border: none;
+  border-radius: .5rem;
+  font-weight: bold;
+  color: #eee;
+  font-size: large;
+  cursor: pointer;
+  transition: all ease-in-out .1s;
+  
+}
+
+.book-now:hover{
+  transform: scale(1.1);
+}
+
+
+.care-doctor{
+  background-image: url("../assets/images/we-care-doctor.jpg");
+  flex-basis: 350px;
+  height: 400px;
+  background-size: contain;
+}
+
+.under-div{
+  display: flex;
+  justify-content: flex-end;
+  padding: 2px;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.under-div div{
+  flex-basis: 150px;
+}
+
+.under-div p{
+  font-weight: bold;
+  font-size: x-large;
+  color: teal;
+  margin-top: 10px;
+}
+
+.under-div span{
+  color: gray;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .text{
+    order: 1;
+    flex-basis: 400px;
+  }
+  .care-doctor{
+    order: 0;
+  }
+
+  .under-div{
+    width: 95%;
+  }
 }

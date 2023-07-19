@@ -6,7 +6,7 @@ import './Navbar.css'
 
 export default function Navbar() {
   return (
-    <header style={{display:'flex',flexDirection:'column',alignItems:'center',position:"sticky",zIndex:'100',top:"0px",backgroundColor:"white"}}>
+    <header style={{display:'flex',flexDirection:'column',alignItems:'center',position:"sticky",zIndex:'100',top:"0px",backgroundColor:"#F3FFFF"}}>
       <div className='navbar'>
         <a className='logo' href="/">
           <img src={logo} alt="wecare" />

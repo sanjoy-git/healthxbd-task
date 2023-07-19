@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 export default function Fasilities() {
   return (
-    <div>
+    <div style={{textAlign:'center'}}>
       <Navbar/>
       <h1>Fasilities</h1>
       <p>Developing</p>
